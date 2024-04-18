@@ -5,9 +5,10 @@
 
 .buttons{
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   align-items: center;
-  row-gap: 20px;
+  justify-content: center;
+  column-gap: 20px;
 }
 
 .animated-button {
@@ -96,4 +97,43 @@
   width: 220px;
   height: 220px;
   opacity: 1;
+}
+
+/*box*/
+
+.box {
+  width: 50%;
+  height: 40vh;
+  background-color: rgba(229, 229, 229, 0.59);
+  
+  margin: 20px auto;
+}
+
+
+/*keyboard*/
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1px;
+  margin-top: 20px;
+  width:50%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.active {
+  background-color: lightblue;
 }
